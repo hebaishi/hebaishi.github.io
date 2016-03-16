@@ -189,3 +189,13 @@ a.boxed {
     width: 42rem;
   }
 }
+
+/*Flatten navbar*/
+
+.navbar-inverse .navbar-toggle {
+  border-width: 0px;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+}
