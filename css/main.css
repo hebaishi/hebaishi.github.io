@@ -34,20 +34,20 @@ a:hover {
 }
 
 .jumbotron {
-  background-color: inherit;
-  margin-top: 70px;
-  margin-left: 10px;
-  margin-right: 10px;
+  background: transparent;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
+  text-shadow: 0 .5rem .5rem rgba(0,0,0,.5);
 }
 
 html,
 body {
   height: 100%;
   background-color: #000;
-  /*background-image: linear-gradient(#555, #aaa);*/
-  background-image: radial-gradient(#444, #000);
-  background-repeat: no-repeat;
+  background-image: url('../images/background_tile.jpg');
+  background-repeat:  repeat;
   background-position: center;
 }
 body {
