@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Fun Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://cdn.rawgit.com/lipis/flag-icon-css/master/css/flag-icon.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://lipis.github.io/flag-icon-css/css/flag-icon.css">
+
+	<style>
+		.jumbotron {
+			margin: 10px;
+			padding: 15px;
+			border-radius: 10px;
+			min-height: 225px;
+		}
+
+		.row {
+			margin-bottom: 15px;
+		}
+
+		.label {
+			border-width: 2px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function testResults() {
+
+			var que = [
+				"How did I lose my virginity? _.",
+				"Why can't I sleep at night? _.",
+				"What's that smell? _.",
+				"I got 99 problems but _ ain't one.",
+				"Maybe she's born with it maybe it's _.",
+				"What's the next Happy Meal(TM) toy? _.",
+				"Here is the church. Here is the steeple. Open the doors and there is _.",
+				"It's a pity that kids these days are all getting involved with _.",
+				"During his childhood, Salvador Dali produced hundreds of paintings of _.",
+				"Alternative medicine is now embracing the curative powers of _.",
+				"And the Academy Award for _ goes to _.",
+				"What's that sound? _.",
+				"What ended my last relationship? _.",
+				"MTV's new reality show features eight washed-up celebrities living with _.",
+				"I drink to forget _.",
+				"I'm sorry, Professor, but I couldn't completely homework because of _.",
+				"What is Batman's guilty pleasure? _.",
+				"This is the way the world ends. Not with a bang but with _.",
+				"What's a girl's best friend? _.",
+				"TSA guidelines now prohibit _ on airplanes.",
+				"_. That's how I die.",
+				"For my next trick, I will pull _ out of _.",
+				"In the new Disney Channel Original Movie, Hannah Montana struggles with _ for the first time.",
+				"_ is a slippery slope that leads to _.",
+				"What does Dick Cheney prefer? _.",
+				"Dear Abby, I'm having trouble with _ and would like your advice.",
+				"Instead of coal, Santa now gives the bad children _.",
+				"What's the most emo? _.",
+				"In 1,000 years, when paper money is a distant memory, how will we pay for goods and services? _.",
+				"What's the next superhero/sidekick duo? _ and _.",
+				"In M. Night Shymalan's new movie, Bruce Willis discovers that _ had really been _ all along.",
+				"A romantic candlelit dinner would be incomplete without _.",
+				"_. Betcha can't just have one.",
+				"White people like _.",
+				"_. High five, bro!",
+				"Next from J. K. Rowling: Harry Potter and the Chamber of _.",
+				"BILLY MAYS HERE FOR _.",
+				"In a world ravaged by _, our only solace is _.",
+				"War! What is it good for? _.",
+				"During sex, I like to think about _.",
+				"What are my parents hiding from me? _.",
+				"What will always get you laid? _.",
+				"In L. A. County Jail, word is you can trade 200 cigarettes for _.",
+				"What did I bring back from Mexico? _.",
+				"What don't you want to find in your Chinese food? _.",
+				"What will I bring back in time to convince people that I am a powerful wizard? _.",
+				"How am I maintaining my relationship status? _.",
+				"_. It's a trap!",
+				"Coming to Broadway this season, _: The Musical.",
+				"While the United States raced the Soviet Union to the moon, the Mexican Government funneled millions of pesos into research on _.",
+				"After the earthquake, Sean Penn brought _ to the people of Haiti.",
+				"Next on ESPN2, the World Series of _.",
+				"Step 1: _. Step 2: _. Step 3: Profit.",
+				"Rumor has it that Vladimir Putin's favourite delicacy is _ stuffed with _.",
+				"But before I kill you, Mr. Bond, I must show you _.",
+				"What gives me uncontrollable gas? _.",
+				"What do old people smell like? _.",
+				"The class field trip was completely ruined by _.",
+				"When Pharoah remained unmoved, Moses called down a Plague of _.",
+				"What's my secret power? _.",
+				"What's there a ton of in heaven? _.",
+				"What would grandma find disturbing, yet oddly charming? _.",
+				"I never truly understood _ until I encountered _.",
+				"What did the U.S. airdrop to the children of Afghanistan? _.",
+				"What helps Obama unwind? _.",
+				"What did Vin Diesel eat for dinner? _.",
+				"_: good to the last drop.",
+				"Why am I sticky? _.",
+				"What gets better with age? _.",
+				"_: kid-tested, mother-approved.",
+				"Daddy, why is mommy crying? _.",
+				"What's Teach for America using to inspire inner city students to succeed? _.",
+				"Studies show that lab rats navigate mazes 50% faster after being exposed to _.",
+				"Life for American Indique was forever changed when the White Man introduced them to _.",
+				"Make a haiku. _. _. _.",
+				"I do not know with what weapons World War III will be fought, but World War IV will be fought with _.",
+				"Why do I hurt all over? _.",
+				"What am I giving up for lent? _.",
+				"In Michael Jackson's final moments, he thought about _.",
+				"The Smithsonian Musem of Natural History has just opened an interactive exhibit on _.",
+				"When I am President of the United States, I will create the Department of _.",
+				"Lifetime(R) presents _, the story of _.",
+				"What I am a billionaire, I shall erect a 50-foot statue to commemorate _.",
+				"When I was tripping on acid, _ turned into _.",
+				"That's right, I killed _. How, you ask? _.",
+				"What's my anti-drug? _.",
+				"_ + _ = _.",
+				"What never fails to liven up the party? _.",
+				"What's the new fad diet? _.",
+				"Major League Baseball has banned _ for giving players an unfair advantage."
+			];
+
+			var ans = [
+				"being on fire",
+				"racism",
+				"old-people smell",
+				"A micropenis",
+				"women in yogurt commercials",
+				"classist undertones",
+				"not giving a shit about the Third World",
+				"sexting",
+				"roofies",
+				"a windmill full of corpses",
+				"the gays",
+				"oversized lollipops",
+				"african children",
+				"an asymmetric boob job",
+				"bingeing and purging",
+				"the hardworking Mexican",
+				"an Oedipus complex",
+				"a tiny horse",
+				"boogers",
+				"penis envy",
+				"Barack Obama",
+				"my humps",
+				"The Tempur-pedic Swedish Sleep System",
+				"Scientology",
+				"Dry heaving",
+				"Skeletor",
+				"Darth Vader",
+				"Figgy pudding",
+				"Chutzpah",
+				"Five-Dollar Footlongs",
+				"elderly Japanese men",
+				"free samples",
+				"Estrogen",
+				"sexual tension",
+				"famine",
+				"a stray pube",
+				"men",
+				"heartwarming orphans",
+				"genital piercings",
+				"a bag of magic beans",
+				"repression",
+				"prancing",
+				"my relationship status",
+				"overcompensation",
+				"peeing a little bit",
+				"pooping back and forth. Forever.",
+				"eating all of the cookies before the AIDS bake-sale.",
+				"testicular torsion",
+				"the Devil himself",
+				"the World of Warcraft",
+				"Dick Cheney",
+				"MechaHitler",
+				"being fabulous",
+				"pictures of boobs",
+				"a caress of the inner thigh",
+				"the Amish",
+				"Papst Blue Ribbon",
+				"Lance Armstrong's missing testicle",
+				"paedophiles",
+				"the Pope",
+				"flying sex snakes",
+				"Sarah Palin",
+				"feeding Rosie O'Donnell",
+				"sexy pillow fights",
+				"another goddamn vampire movie",
+				"cybernetic enhancements",
+				"civilian casualties",
+				"scrubbing under the folds",
+				"the female orgasm",
+				"bitches",
+				"the Boy Scouts of America",
+				"Auschwitz",
+				"finger painting",
+				"the Care Bear Stare",
+				"the Jews",
+				"being marginalized",
+				"the Blood of Christ",
+				"dead parents",
+				"seduction",
+				"dying of dysentery",
+				"Mr. Clean, right behind you",
+				"The Virginia Tech Massacre",
+				"Jewish fraternities",
+				"Hot Pockets",
+				"Natalie Portman",
+				"agriculture",
+				"Judge Judy",
+				"surprise sex",
+				"the homosexual lifestyle",
+				"Robert Downey, Jr.",
+				"The Trail of Tears",
+				"an M. Night Shymalan plot twist",
+				"a big hoopia about nothing",
+				"electricity",
+				"amputees",
+				"throwing a virgin into a volcano",
+				"Italians",
+				"explosions",
+				"a good sniff",
+				"destroying the evidence",
+				"children on leashes",
+				"catapults",
+				"one trillion dollars",
+				"friends with benefits",
+				"dying",
+				"silence",
+				"a honest cop with nothing left to lose",
+				"YOU MUST CONSTRUCT ADDITIONAL PYLONS",
+				"Justin Bieber",
+				"The Holy Bible",
+				"balls",
+				"praying the gay away",
+				"teenage pregnancy",
+				"German dungeon porn",
+				"the invisible hand",
+				"my inner demons",
+				"powerful thighs",
+				"getting naked and watching Nickelodeon",
+				"crippling debt",
+				"Kamikaze pilots",
+				"teaching a robot to love",
+				"police brutality",
+				"horse meat",
+				"all-you-can-eat shrimp for $4.99",
+				"heteronormativity",
+				"Michael Jackson",
+				"a really cool hat",
+				"copping a feel",
+				"crystal meth",
+				"shapeshifters",
+				"fingering",
+				"a disappointing birthday party",
+				"dental dams",
+				"my soul",
+				"a sausage festival",
+				"the chronic",
+				"Eugenics",
+				"synergistic management solutions",
+				"RoboCop",
+				"serfdom",
+				"Stephen Hawking talking dirty",
+				"tangled Slinkys",
+				"fiery poops",
+				"public ridicule",
+				"that thing that electrocutes your abs",
+				"picking up girls at the abortion clinic",
+				"object permanence",
+				"GoGurt(R)",
+				"lockjaw",
+				"attitude",
+				"passable transvestites",
+				"wet dreams",
+				"The Dance of the Sugar Plum Fairy",
+				"firing a rifle into the air while balls deep into a squealing hog",
+				"panda sex",
+				"necrophilia",
+				"grave robbing",
+				"a bleached asshole",
+				"multiple stab wounds",
+				"stranger danger",
+				"a monkey smoking a cigar",
+				"smegma",
+				"a live studio audience",
+				"making a pouty face",
+				"the violation of our most basic human rights",
+				"unfathomable stupidity",
+				"sunshine and rainbows",
+				"whipping it out",
+				"the token minority",
+				"the terrorists",
+				"the Three-Fifths compromise.",
+				"a snapping turtle biting the tip of your penis",
+				"vehicular manslaughter",
+				"jibber-jabber",
+				"emotions",
+				"getting so angry that you pop a boner",
+				"same-sex ice dancing",
+				"an M16 assault rifle",
+				"man meat",
+				"incest",
+				"a foul mouth",
+				"flightless birds",
+				"doing the right thing",
+				"when you fart and a little bit comes out",
+				"frolicking",
+				"being a dick to children",
+				"poopy diapers",
+				"filling Sean Hannity with helium and watching him float away",
+				"raptor attacks",
+				"swooping",
+				"concealing a boner",
+				"full frontal nudity",
+				"vigorous jazz hands",
+				"nipple blades",
+				"a bitch slap",
+				"Michelle Obama's arms",
+				"mouth herpes",
+				"a robust mongoloid",
+				"mutually-assured destruction",
+				"the Rapture",
+				"road head",
+				"Stalin",
+				"lactation",
+				"Hurricane Katrina",
+				"the true meaning of Christmas",
+				"self-loathing",
+				"a brain tumour",
+				"dead babies",
+				"New Age Music",
+				"a thermonuclear detonation",
+				"geese",
+				"Kanye West",
+				"God",
+				"a spastic nerd",
+				"Harry Potter erotica",
+				"kids with ass cancer",
+				"lumberjack fantasies",
+				"the American Dream",
+				"puberty",
+				"sweet, sweet vengeance",
+				"winking at old people",
+				"the taine; the grundle; the fleshy fun-bridge",
+				"Oompa-Loompas",
+				"authentic Mexican cuision",
+				"preteens",
+				"The Little Engine That Could",
+				"guys who don't call",
+				"erectile dysfunction",
+				"parting the red sea",
+				"Rush Limbaugh's soft, shitty body",
+				"saxophone solos",
+				"land mines",
+				"capturing Newt Gingrich and forcing him to dance in a monkey suit",
+				"me time",
+				"nickelback",
+				"vigilante justice",
+				"the South",
+				"opposable thumbs",
+				"ghosts",
+				"alcoholism",
+				"poorly-timed Holocaust jokes",
+				"inappropriate yodelling",
+				"battlefield amputations",
+				"exactly what you'd expect",
+				"a time travel paradox",
+				"AXE Body Spray",
+				"actually taking candy from a baby",
+				"leaving an awkward voicemail",
+				"a sassy black woman",
+				"being a motherfucking sorcerer",
+				"a mopey zoo lion",
+				"a murder most foul",
+				"a falcon with a cap on its head",
+				"farting and walking away",
+				"a mating display",
+				"the Chinese gymnastics team",
+				"friction",
+				"Asians who aren't good at math",
+				"fear itself",
+				"A can of whoop-ass",
+				"yeast",
+				"Lunchables (TM)",
+				"licking things to claim them as your own",
+				"vikings",
+				"the Kool-Aid Man",
+				"hot cheese",
+				"Nicolas Cage",
+				"a defective condom",
+				"the inevitable heat death of the universe",
+				"Republicans",
+				"William Shatner",
+				"tentacle porn",
+				"sperm whales",
+				"Lady Gaga",
+				"chunks of dead prostitute",
+				"gloryholes",
+				"daddy issues",
+				"a mime having a stroke",
+				"white people",
+				"a lifetime of sadness",
+				"tasteful sideboob",
+				"a sea of troubles",
+				"Nazis",
+				"a cooler full of organs",
+				"giving 110%",
+				"doin't it in the butt",
+				"John Wilkes Booth",
+				"obesity",
+				"a homoerotic volleyball montage",
+				"puppies",
+				"natural male enhancement",
+				"brown people",
+				"dropping a chandelier on your enemies and riding the rope up",
+				"soup that is too hot",
+				"porn stars",
+				"hormone injections",
+				"pulling out",
+				"the Big Bang",
+				"switching to Geico(R)",
+				"wearing underwear inside-out to avoid doing laundry",
+				"rehab",
+				"Christopher Walken",
+				"Count Chocula",
+				"The Hamburglar",
+				"not reciprocating oral sex",
+				"Aaron Burr",
+				"hot people",
+				"foreskin",
+				"assless chaps",
+				"the miracle of childbirth",
+				"waiting 'till marriage",
+				"two midgets shitting into a bucket",
+				"Adderall(TM)",
+				"cheating in the Special Olympics",
+				"the glass ceiling",
+				"the Hustle",
+				"getting drunk on mouthwash",
+				"bling",
+				"breaking out into song and dance",
+				"a Super Soaker(TM) full of cat pee",
+				"the Underground Railroad",
+				"home video of Oprah sobbing into a Lean Cuisine(R)",
+				"The Rev. Dr. Martin Luther King, Jr.",
+				"extremely tight pants",
+				"third base",
+				"waking up half-naked in a Denny's parking lot",
+				"golden showers",
+				"white privilege",
+				"hope",
+				"taking off your shirt",
+				"smallpox blankets",
+				"ethnic cleansing",
+				"queefing",
+				"helplessly giggling at the mention of Hutus and Tutsis",
+				"getting really high",
+				"natural selection",
+				"a gassy antelope",
+				"my sex life",
+				"Arnold Schwarzenegger",
+				"pretending to care",
+				"Ronald Reagan",
+				"Toni Morrison's vagina",
+				"Pterodactyl eggs",
+				"a death ray",
+				"BATMAN!",
+				"homeless people",
+				"Racially-biased SAT questions",
+				"Centaurs",
+				"a salty surprise",
+				"72 virgins",
+				"embryonic stem cells",
+				"pixelated bukkake",
+				"seppuku",
+				"an icepick lobotomy",
+				"stormtroopers",
+				"menstrual rage",
+				"an uppercut",
+				"Shaquile O'Neal's acting career",
+				"horrifying laser hair removal accidents",
+				"autocannibalism",
+				"a fetus",
+				"riding off into the sunset",
+				"goblins",
+				"eating the last known bison",
+				"shiny objects",
+				"being rich",
+				"a Bop It(TM)",
+				"leprosy",
+				"world peace",
+				"dick fingers",
+				"chainsaws for hands",
+				"the Make-A-Wish Foundation",
+				"Britney Spears at 55",
+				"laying an egg",
+				"the folly of man",
+				"my genitals",
+				"grandma",
+				"flesh-eating bacteria",
+				"poor people",
+				"50,000 volts straight to the nipples",
+				"active listening",
+				"the Übermensch",
+				"poor life choices",
+				"altar boys",
+				"my vagina",
+				"Pac-Man uncontrollably guzzling cum",
+				"sniffing glue",
+				"the placenta",
+				"the profoundly handicapped",
+				"spontaneous human combustion",
+				"the KKK",
+				"the clitoris",
+				"not wearing pants",
+				"date rape",
+				"black people",
+				"a bucket of fish heads",
+				"hospice care",
+				"passive-aggressive Post-It notes",
+				"Fancy Feast(R)",
+				"the heart of a child",
+				"sharing needles",
+				"scalping",
+				"a look-see",
+				"getting married, having a few kids, buying some stuff, retiring to Florida and dying",
+				"Sean Penn",
+				"Sean Connery",
+				"expecting a burp and vomiting on the floor",
+				"wifely duties",
+				"a pyramid of severed heads",
+				"Genghis Khan",
+				"historically black colleges",
+				"raping and pillaging",
+				"a subscription to Men's Fitness",
+				"the milk man",
+				"friendly fire",
+				"women's suffrage",
+				"AIDS",
+				"former President George W. Bush",
+				"8 oz. of sweet Mexican black-tar heroin",
+				"half-assed foreplay",
+				"edible underpants",
+				"my collection of high-tech sex toys",
+				"the Force",
+				"Bees",
+				"loose lips",
+				"jerking off into a pool of children's tears",
+				"a micropig wearing a tiny raincoat and booties",
+				"a hot mess",
+				"masturbation",
+				"Tom Cruise",
+				"a balanced breakfast",
+				"anal beads",
+				"drinking alone",
+				"Cards Against Humanity",
+				"coat hanger abortions",
+				"used panties",
+				"cuddling",
+				"wiping her butt",
+				"Domino's  Oreo(TM) Dessert Pizza",
+				"a zesty breakfast burrito",
+				"Morgan Freeman's voice",
+				"a middle-aged man on roller skates",
+				"Gandhi",
+				"the penny whistle solo from 'My Heart Will Go On'",
+				"spectacular abs",
+				"Keanu Reeves",
+				"child beauty pageants",
+				"child abuse",
+				"Bill Nye the Science Guy",
+				"science",
+				"a tribe of warrior women",
+				"Viagra(R)",
+				"Her Majesty, Queen Elizabeth II",
+				"the entire Mormon Tabernacle Choir",
+				"Hulk Hogan",
+				"Take-backsies",
+				"an erection that lasts longer than four hours",
+			];
+
+			genRandomUnique = function(num, max) {
+				arr = {};
+				num_random = 0;
+				while (num_random < num) {
+					ran = Math.floor(Math.random() * max);
+					if (!arr.hasOwnProperty(ran)) {
+						arr[ran] = "1";
+						num_random += 1;
+					}
+				}
+				result = [];
+				Object.keys(arr).forEach(function(entry) {
+					result.push(parseInt(entry));
+				})
+				return result;
+			}
+
+			random_que_index = genRandomUnique(1, que.length)[0];
+			txt = que[random_que_index];
+
+			answer_indices = genRandomUnique(3, que.length)
+			answer_strings = [];
+			for (i = 0; i < answer_indices.length; i++) {
+				current_answer = ans[answer_indices[i]];
+				if (i == 0 && txt.charAt(0) == '_') {
+					firstChar = current_answer.charAt(0).toUpperCase();
+					current_answer = firstChar + current_answer.substring(1, current_answer.length);
+				}
+				current_answer = "<strong>" + current_answer + "</strong>";
+				answer_strings.push(current_answer)
+			}
+
+			while (txt.indexOf('_') != -1) {
+				txt = txt.replace('_', answer_strings.shift())
+			}
+
+			document.getElementById('main-text').innerHTML = txt;
+		}
+
+		function clearText() {
+			document.getElementById('main-text').innerHTML = "Please click the button below to generate material";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="jumbotron">
+		<div class="container text-center">
+			<p class="lead" id="main-text">Please click the button below to generate material</p>
+		</div>
+	</div>
+	<div class="container">
+		<!-- <div class="row">
+			<div class="col-lg-12 text-center">
+				<h3><strong>Edition(s): </strong></h3>
+				<div class="btn-group btn-group-justified" data-toggle="buttons">
+					<label class="btn btn-lg btn-primary active">
+						<input type="checkbox" checked autocomplete="off" id="btn-us">
+						<span class="flag-icon flag-icon-us"></span>
+					</label>
+					<label class="btn btn-lg btn-primary">
+						<input type="checkbox" autocomplete="off" id="btn-uk">
+						<span class="flag-icon flag-icon-gb"></span>
+					</label>
+					<label class="btn btn-lg btn-primary" id="btn-ca">
+						<input type="checkbox" autocomplete="off">
+						<span class="flag-icon flag-icon-ca"></span>
+					</label>
+					<label class="btn btn-lg btn-primary" id="btn-au">
+						<input type="checkbox" autocomplete="off">
+						<span class="flag-icon flag-icon-au"></span>
+					</label>
+				</div>
+			</div>
+		</div> -->
+		<div class="row">
+			<div class="col-md-6 text-center">
+				<p>
+					<button type="button" class="btn btn-success btn-lg btn-block" onclick="testResults()"><i class="fa fa-refresh fa-lg"></i> Generate</button>
+				</p>
+			</div>
+			<div class="col-md-6 text-center">
+				<p>
+					<button type="button" class="btn btn-danger btn-lg btn-block" onclick="clearText()"><i class="fa fa-times fa-lg"></i> Clear</button>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4 text-center">
+				<p>
+					Based on the game <a href="https://cardsagainsthumanity.com/">Cards Against Humanity</a>.
+				</p>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+	</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</html>
